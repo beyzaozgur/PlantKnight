@@ -1,0 +1,17 @@
+﻿@page "/"
+@inject NavigationManager NavigationManager
+
+<img class="center" width="300" height="300" src="Images/plant-knight-logo.png" />
+
+<div class="button-container">
+	<button class="btn btn-primary center" @onclick='(() => Navigate("/camera/1"))'>Take Photo</button>
+	<button class="btn btn-primary center" @onclick='(() => Navigate("/camera/2"))'>Upload Photo</button>
+    <button class="btn btn-warning center" @onclick='(() => Navigate("/chatbot"))'>Chatbot</button>
+</div>
+
+@code {
+    public void Navigate(string pageUrl)
+    {
+        NavigationManager.NavigateTo(pageUrl);
+    }
+}
