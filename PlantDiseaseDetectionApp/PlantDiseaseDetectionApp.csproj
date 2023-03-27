@@ -57,4 +57,17 @@
       <Folder Include="Data\" />
     </ItemGroup>
 
+    <ItemGroup Condition="'$(TargetFramework)' == 'net6.0-android'">
+      <PackageReference Include="Xamarin.TensorFlow.Lite">
+        <Version>2.10.0.1</Version>
+      </PackageReference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction" Version="2.0.0" />
+      <PackageReference Include="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Training" Version="2.0.0" />
+      <PackageReference Include="Microsoft.Rest.ClientRuntime" Version="2.3.24" />
+      <PackageReference Include="TensorFlow.NET" Version="0.100.4" />
+    </ItemGroup>
+
 </Project>
