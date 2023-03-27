@@ -70,4 +70,6 @@
       <PackageReference Include="TensorFlow.NET" Version="0.100.4" />
     </ItemGroup>
 
+    <ProjectExtensions><VisualStudio><UserProperties XamarinHotReloadDebuggerTimeoutExceptionPlantDiseaseDetectionAppHideInfoBar="True" /></VisualStudio></ProjectExtensions>
+
 </Project>

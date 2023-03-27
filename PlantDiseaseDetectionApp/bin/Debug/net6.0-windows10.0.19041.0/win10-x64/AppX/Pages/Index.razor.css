@@ -4,6 +4,10 @@
     margin-right: auto;
 }
 
+.button-container {
+    margin-top: 10%
+}
+
 button {
     margin-top: 5%;
     width: 35%;

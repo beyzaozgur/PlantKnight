@@ -2037,3 +2037,7 @@ C:\Users\emirc\Desktop\imaginer\repo\PlantKnight\PlantDiseaseDetectionApp\obj\De
 C:\Users\emirc\Desktop\imaginer\repo\PlantKnight\PlantDiseaseDetectionApp\obj\Debug\net6.0-android\stamp\_GenerateJavaStubs.stamp
 C:\Users\emirc\Desktop\imaginer\repo\PlantKnight\PlantDiseaseDetectionApp\obj\Debug\net6.0-android\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\emirc\Desktop\imaginer\repo\PlantKnight\PlantDiseaseDetectionApp\obj\Debug\net6.0-android\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\emirc\Desktop\imaginer\repo\PlantKnight\PlantDiseaseDetectionApp\obj\Debug\net6.0-android\android\assets\Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.dll
+C:\Users\emirc\Desktop\imaginer\repo\PlantKnight\PlantDiseaseDetectionApp\obj\Debug\net6.0-android\android\assets\Microsoft.Azure.CognitiveServices.Vision.CustomVision.Training.dll
+C:\Users\emirc\Desktop\imaginer\repo\PlantKnight\PlantDiseaseDetectionApp\obj\Debug\net6.0-android\android\assets\Microsoft.Rest.ClientRuntime.Azure.dll
+C:\Users\emirc\Desktop\imaginer\repo\PlantKnight\PlantDiseaseDetectionApp\obj\Debug\net6.0-android\android\assets\Microsoft.Rest.ClientRuntime.dll

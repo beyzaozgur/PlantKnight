@@ -58,6 +58,7 @@ splashSplashScreen.scale-400.png
 wwwroot\PlantDiseaseDetectionApp.styles.css
 wwwroot\PlantDiseaseDetectionApp.bundle.scp.css
 Pages\Camera.razor.css
+Pages\Chatbot.razor.css
 Pages\Index.razor.css
 AboutAssets.txt
 Shared\MainLayout.razor.css
