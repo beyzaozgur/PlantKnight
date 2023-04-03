@@ -11,41 +11,32 @@ public static class Classifier
     // You can obtain these values from the Keys and Endpoint page for your Custom Vision Prediction resource in the Azure Portal.
     private static string predictionEndpoint = "https://imagine-prediction.cognitiveservices.azure.com/";
     private static string predictionKey = "6879549f63e94dc8a0fb10aadea09866";
-    // You can obtain this value from the Properties page for your Custom Vision Prediction resource in the Azure Portal. See the "Resource ID" field. This typically has a value such as:
-    // /subscriptions/<your subscription ID>/resourceGroups/<your resource group>/providers/Microsoft.CognitiveServices/accounts/<your Custom Vision prediction resource name>
 
-    private static List<string> hemlockImages;
-    private static List<string> japaneseCherryImages;
-    private static string publishedModelName = "treeClassModel";
-    private static MemoryStream testImage;
+    private static string publishedModelName = "Iteration1";
+    private static CustomVisionPredictionClient predictionApi;
+    private static CustomVisionTrainingClient trainingApi;
+    private static Guid projectGuid;
+    private static Project project;
     public static void RunClassifier()
     {
-        CustomVisionTrainingClient trainingApi = AuthenticateTraining(trainingEndpoint, trainingKey, predictionKey);
-        CustomVisionPredictionClient predictionApi = AuthenticatePrediction(predictionEndpoint, predictionKey);
+        trainingApi = AuthenticateTraining(trainingEndpoint, trainingKey, predictionKey);
+        predictionApi = AuthenticatePrediction(predictionEndpoint, predictionKey);
 
-        Guid projectGuid = new Guid("dc5d91bc-46aa-4b74-89dc-bf0721019415");
-        Project project = trainingApi.GetProject(projectGuid);
-
-
-        string imageFilePath = @"C:\Users\emirc\Desktop\imaginer\repo\PlantKnight\PlantDiseaseDetectionApp\test.jpg";
+        projectGuid = new Guid("dc5d91bc-46aa-4b74-89dc-bf0721019415");
+        project = trainingApi.GetProject(projectGuid);
+    }
+    public static IDictionary<double,String> getPrediction(String imageFilePath)
+    {
         FileStream fileStream = new FileStream(imageFilePath, FileMode.Open, FileAccess.Read);
 
         var result = predictionApi.ClassifyImageAsync(project.Id, publishedModelName, fileStream);
-        while (!result.IsCompletedSuccessfully)
+        IDictionary<double,String> resultPerLabel= new Dictionary<double, String>();
+        foreach (var c in result.Result.Predictions)
         {
-
+            resultPerLabel[c.Probability] = c.TagName;
         }
-        Console.WriteLine(result);
+        return resultPerLabel;
     }
-
-    private static byte[] GetImageAsByteArray(string imageFilePath)
-    {
-        FileStream fileStream = new FileStream(imageFilePath, FileMode.Open, FileAccess.Read);
-        BinaryReader binaryReader = new BinaryReader(fileStream);
-        return binaryReader.ReadBytes((int)fileStream.Length);
-    }
-
-
     private static CustomVisionTrainingClient AuthenticateTraining(string endpoint, string trainingKey, string predictionKey)
     {
         // Create the Api, passing in the training key
