@@ -6,8 +6,8 @@ public static class MauiProgram
 {
 	public static MauiApp CreateMauiApp()
 	{
-		Classifier.RunClassifier();
-		IDictionary<double,String> predRes=Classifier.getPrediction(@"C:\Users\emirc\Desktop\imaginer\repo\PlantKnight\PlantDiseaseDetectionApp\test.jpg");
+		//Classifier.RunClassifier();
+		//IDictionary<double,String> predRes=Classifier.getPrediction(@"C:\Users\w\source\repos\PlantDiseaseDetectionApp\PlantDiseaseDetectionApp\test.jpg");
 		var builder = MauiApp.CreateBuilder();
 		builder
 			.UseMauiApp<App>()
