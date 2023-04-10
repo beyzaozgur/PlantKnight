@@ -32,6 +32,8 @@
 
     public async void TakeUploadPhoto(int Id)
     {
+        await Application.Current.MainPage.DisplayAlert("Warning", "Please make sure that the photo of the plant is close and clear to get the most accurate result.", "OK");
+
         if (MediaPicker.Default.IsCaptureSupported)
         {
             FileResult photo = null;
