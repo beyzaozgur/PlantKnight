@@ -1,8 +1,24 @@
-﻿@page "/result"
+﻿@page "/result/{Text}"
+@inject NavigationManager NavigationManager
 
-<h3>Result</h3>
+<div class="column card-style">
+	<figure>
+		<img src="Images/test.jpg" alt="plant image">
+	</figure>
+	<div class="card-text">
+		<h1>Potato Blight</h1>
+		<p class="ellipsis">
+			@Text
+		</p>
+		<button class="btn btn-warning center" @onclick='(() => NavigationManager.NavigateTo("/chatbot"))'>
+			<i class="fa fa-comments"></i> Ask more to chatbot
+		</button>
+	</div>
+</div>
 
 @code {
 
-}
+	[Parameter]
+	public string Text { get; set; }
 
+}

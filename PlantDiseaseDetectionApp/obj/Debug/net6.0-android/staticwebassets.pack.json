@@ -9,10 +9,6 @@
       "PackagePath": "staticwebassets\\Images\\MicrosoftLogo.png"
     },
     {
-      "Id": "C:\\Users\\w\\source\\repos\\PlantDiseaseDetectionApp\\PlantDiseaseDetectionApp\\wwwroot\\Images\\OurTeam\\Beyza.jpg",
-      "PackagePath": "staticwebassets\\Images\\OurTeam\\Beyza.jpg"
-    },
-    {
       "Id": "C:\\Users\\w\\source\\repos\\PlantDiseaseDetectionApp\\PlantDiseaseDetectionApp\\wwwroot\\Images\\OurTeam\\Beyza.png",
       "PackagePath": "staticwebassets\\Images\\OurTeam\\Beyza.png"
     },
@@ -39,6 +35,10 @@
     {
       "Id": "C:\\Users\\w\\source\\repos\\PlantDiseaseDetectionApp\\PlantDiseaseDetectionApp\\wwwroot\\Images\\plant-knight-logo.png",
       "PackagePath": "staticwebassets\\Images\\plant-knight-logo.png"
+    },
+    {
+      "Id": "C:\\Users\\w\\source\\repos\\PlantDiseaseDetectionApp\\PlantDiseaseDetectionApp\\wwwroot\\Images\\test.jpg",
+      "PackagePath": "staticwebassets\\Images\\test.jpg"
     },
     {
       "Id": "C:\\Users\\w\\source\\repos\\PlantDiseaseDetectionApp\\PlantDiseaseDetectionApp\\wwwroot\\css\\app.css",

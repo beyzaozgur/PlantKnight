@@ -74,6 +74,10 @@
               "target": "Package",
               "version": "[2.0.0, )"
             },
+            "Microsoft.Bot.Connector.DirectLine": {
+              "target": "Package",
+              "version": "[3.0.2, )"
+            },
             "Microsoft.Maui.Dependencies": {
               "target": "Package",
               "version": "[6.0.552, )",
@@ -201,6 +205,10 @@
               "target": "Package",
               "version": "[2.0.0, )"
             },
+            "Microsoft.Bot.Connector.DirectLine": {
+              "target": "Package",
+              "version": "[3.0.2, )"
+            },
             "Microsoft.Maui.Dependencies": {
               "target": "Package",
               "version": "[6.0.552, )",
@@ -304,6 +312,10 @@
             "Microsoft.Azure.CognitiveServices.Vision.CustomVision.Training": {
               "target": "Package",
               "version": "[2.0.0, )"
+            },
+            "Microsoft.Bot.Connector.DirectLine": {
+              "target": "Package",
+              "version": "[3.0.2, )"
             },
             "Microsoft.Maui.Dependencies": {
               "target": "Package",
@@ -409,6 +421,10 @@
             "Microsoft.Azure.CognitiveServices.Vision.CustomVision.Training": {
               "target": "Package",
               "version": "[2.0.0, )"
+            },
+            "Microsoft.Bot.Connector.DirectLine": {
+              "target": "Package",
+              "version": "[3.0.2, )"
             },
             "Microsoft.Maui.Dependencies": {
               "target": "Package",

@@ -37,6 +37,10 @@
       "PackagePath": "staticwebassets\\Images\\plant-knight-logo.png"
     },
     {
+      "Id": "C:\\Users\\w\\source\\repos\\PlantDiseaseDetectionApp\\PlantDiseaseDetectionApp\\wwwroot\\Images\\test.jpg",
+      "PackagePath": "staticwebassets\\Images\\test.jpg"
+    },
+    {
       "Id": "C:\\Users\\w\\source\\repos\\PlantDiseaseDetectionApp\\PlantDiseaseDetectionApp\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },

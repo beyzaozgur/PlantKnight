@@ -37,13 +37,6 @@ build_metadata.AdditionalFiles.TargetPath = TWFpbi5yYXpvcg==
 build_metadata.AdditionalFiles.RelativePath = 
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/w/source/repos/PlantDiseaseDetectionApp/PlantDiseaseDetectionApp/Pages/Result.razor]
-build_metadata.AdditionalFiles.GenKind = 
-build_metadata.AdditionalFiles.ManifestResourceName = 
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVzdWx0LnJhem9y
-build_metadata.AdditionalFiles.RelativePath = 
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/w/source/repos/PlantDiseaseDetectionApp/PlantDiseaseDetectionApp/_Imports.razor]
 build_metadata.AdditionalFiles.GenKind = 
 build_metadata.AdditionalFiles.ManifestResourceName = 
@@ -78,6 +71,13 @@ build_metadata.AdditionalFiles.ManifestResourceName =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.RelativePath = 
 build_metadata.AdditionalFiles.CssScope = b-jcbzc2sn4r
+
+[C:/Users/w/source/repos/PlantDiseaseDetectionApp/PlantDiseaseDetectionApp/Pages/Result.razor]
+build_metadata.AdditionalFiles.GenKind = 
+build_metadata.AdditionalFiles.ManifestResourceName = 
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVzdWx0LnJhem9y
+build_metadata.AdditionalFiles.RelativePath = 
+build_metadata.AdditionalFiles.CssScope = b-5wrcyj4oep
 
 [C:/Users/w/source/repos/PlantDiseaseDetectionApp/PlantDiseaseDetectionApp/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.GenKind = 

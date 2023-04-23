@@ -791,3 +791,6 @@ C:\Users\emirc\Desktop\imaginer\repo\PlantKnight\PlantDiseaseDetectionApp\obj\De
 C:\Users\emirc\Desktop\imaginer\repo\PlantKnight\PlantDiseaseDetectionApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 C:\Users\emirc\Desktop\imaginer\repo\PlantKnight\PlantDiseaseDetectionApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 C:\Users\emirc\Desktop\imaginer\repo\PlantKnight\PlantDiseaseDetectionApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
+C:\Users\w\source\repos\PlantDiseaseDetectionApp\PlantDiseaseDetectionApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\scopedcss\Pages\About.razor.rz.scp.css
+C:\Users\w\source\repos\PlantDiseaseDetectionApp\PlantDiseaseDetectionApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\scopedcss\Pages\Chatbot.razor.rz.scp.css
+C:\Users\w\source\repos\PlantDiseaseDetectionApp\PlantDiseaseDetectionApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\scopedcss\Pages\Contact.razor.rz.scp.css

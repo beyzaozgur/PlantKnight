@@ -4,5 +4,40 @@
         <name>PlantDiseaseDetectionApp</name>
     </assembly>
     <members>
+        <member name="T:PlantDiseaseDetectionApp.BotConnector.BotEndpoint">
+            <summary>
+            class with bot info
+            </summary>
+        </member>
+        <member name="M:PlantDiseaseDetectionApp.BotConnector.BotEndpoint.#ctor(System.String,System.String,System.String)">
+            <summary>
+            constructor
+            </summary>
+            <param name="botId">Bot Id GUID</param>
+            <param name="tenantId">Bot tenant GUID</param>
+            <param name="tokenEndPoint">REST API endpoint to retreive directline token</param>
+        </member>
+        <member name="T:PlantDiseaseDetectionApp.BotConnector.BotService">
+            <summary>
+            Bot Service class to interact with bot
+            </summary>
+        </member>
+        <member name="M:PlantDiseaseDetectionApp.BotConnector.BotService.GetTokenAsync">
+            <summary>
+            Get directline token for connecting bot
+            </summary>
+            <returns>directline token as string</returns>
+        </member>
+        <member name="T:PlantDiseaseDetectionApp.BotConnector.DirectLineToken">
+            <summary>
+            class for serialization/deserialization DirectLineToken
+            </summary>
+        </member>
+        <member name="M:PlantDiseaseDetectionApp.BotConnector.DirectLineToken.#ctor(System.String)">
+            <summary>
+            constructor
+            </summary>
+            <param name="token">Directline token string</param>
+        </member>
     </members>
 </doc>

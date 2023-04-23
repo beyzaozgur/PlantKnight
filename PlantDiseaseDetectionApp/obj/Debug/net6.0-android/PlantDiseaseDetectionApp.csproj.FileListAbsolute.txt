@@ -2048,6 +2048,8 @@ C:\Users\w\source\repos\PlantDiseaseDetectionApp\PlantDiseaseDetectionApp\obj\De
 C:\Users\w\source\repos\PlantDiseaseDetectionApp\PlantDiseaseDetectionApp\obj\Debug\net6.0-android\android\assets\Xamarin.TensorFlow.Lite.dll
 C:\Users\w\source\repos\PlantDiseaseDetectionApp\PlantDiseaseDetectionApp\obj\Debug\net6.0-android\scopedcss\Pages\Contact.razor.rz.scp.css
 C:\Users\w\source\repos\PlantDiseaseDetectionApp\PlantDiseaseDetectionApp\obj\Debug\net6.0-android\scopedcss\Pages\About.razor.rz.scp.css
+C:\Users\w\source\repos\PlantDiseaseDetectionApp\PlantDiseaseDetectionApp\obj\Debug\net6.0-android\android\assets\Microsoft.Bot.Connector.DirectLine.dll
+C:\Users\w\source\repos\PlantDiseaseDetectionApp\PlantDiseaseDetectionApp\obj\Debug\net6.0-android\scopedcss\Pages\Result.razor.rz.scp.css
 C:\Users\w\source\repos\PlantDiseaseDetectionApp\PlantDiseaseDetectionApp\obj\Debug\net6.0-android\android\assets\mscorlib.dll
 C:\Users\w\source\repos\PlantDiseaseDetectionApp\PlantDiseaseDetectionApp\obj\Debug\net6.0-android\android\assets\System.Collections.Concurrent.dll
 C:\Users\w\source\repos\PlantDiseaseDetectionApp\PlantDiseaseDetectionApp\obj\Debug\net6.0-android\android\assets\System.Data.dll

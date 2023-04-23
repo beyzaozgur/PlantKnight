@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "u6VBdl0g4eRkenR+lIK+5FcwL/zpab8vuzvh72N4hPo=",
+  "Hash": "YnsYf0fxeww1zoPbmMYFgA5/ymsuqnsb9yaBsH316LU=",
   "Source": "PlantDiseaseDetectionApp",
   "BasePath": "/",
   "Mode": "Root",
@@ -406,6 +406,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\plant-knight-logo-original.png"
+    },
+    {
+      "Identity": "C:\\Users\\w\\source\\repos\\PlantDiseaseDetectionApp\\PlantDiseaseDetectionApp\\wwwroot\\Images\\test.jpg",
+      "SourceId": "PlantDiseaseDetectionApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\w\\source\\repos\\PlantDiseaseDetectionApp\\PlantDiseaseDetectionApp\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "Images/test.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\test.jpg"
     },
     {
       "Identity": "C:\\Users\\w\\source\\repos\\PlantDiseaseDetectionApp\\PlantDiseaseDetectionApp\\wwwroot\\index.html",

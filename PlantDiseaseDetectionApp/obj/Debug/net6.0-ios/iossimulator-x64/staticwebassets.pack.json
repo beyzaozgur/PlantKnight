@@ -5,6 +5,38 @@
       "PackagePath": "staticwebassets\\PlantDiseaseDetectionApp.styles.css"
     },
     {
+      "Id": "C:\\Users\\w\\source\\repos\\PlantDiseaseDetectionApp\\PlantDiseaseDetectionApp\\wwwroot\\Images\\MicrosoftLogo.png",
+      "PackagePath": "staticwebassets\\Images\\MicrosoftLogo.png"
+    },
+    {
+      "Id": "C:\\Users\\w\\source\\repos\\PlantDiseaseDetectionApp\\PlantDiseaseDetectionApp\\wwwroot\\Images\\OurTeam\\Beyza.png",
+      "PackagePath": "staticwebassets\\Images\\OurTeam\\Beyza.png"
+    },
+    {
+      "Id": "C:\\Users\\w\\source\\repos\\PlantDiseaseDetectionApp\\PlantDiseaseDetectionApp\\wwwroot\\Images\\OurTeam\\Efe.jpg",
+      "PackagePath": "staticwebassets\\Images\\OurTeam\\Efe.jpg"
+    },
+    {
+      "Id": "C:\\Users\\w\\source\\repos\\PlantDiseaseDetectionApp\\PlantDiseaseDetectionApp\\wwwroot\\Images\\OurTeam\\Emircan.jpg",
+      "PackagePath": "staticwebassets\\Images\\OurTeam\\Emircan.jpg"
+    },
+    {
+      "Id": "C:\\Users\\w\\source\\repos\\PlantDiseaseDetectionApp\\PlantDiseaseDetectionApp\\wwwroot\\Images\\OurTeam\\Eren.jpg",
+      "PackagePath": "staticwebassets\\Images\\OurTeam\\Eren.jpg"
+    },
+    {
+      "Id": "C:\\Users\\w\\source\\repos\\PlantDiseaseDetectionApp\\PlantDiseaseDetectionApp\\wwwroot\\Images\\OurTeam\\Nadirhan.jpg",
+      "PackagePath": "staticwebassets\\Images\\OurTeam\\Nadirhan.jpg"
+    },
+    {
+      "Id": "C:\\Users\\w\\source\\repos\\PlantDiseaseDetectionApp\\PlantDiseaseDetectionApp\\wwwroot\\Images\\plant-knight-logo-original.png",
+      "PackagePath": "staticwebassets\\Images\\plant-knight-logo-original.png"
+    },
+    {
+      "Id": "C:\\Users\\w\\source\\repos\\PlantDiseaseDetectionApp\\PlantDiseaseDetectionApp\\wwwroot\\Images\\plant-knight-logo.png",
+      "PackagePath": "staticwebassets\\Images\\plant-knight-logo.png"
+    },
+    {
       "Id": "C:\\Users\\w\\source\\repos\\PlantDiseaseDetectionApp\\PlantDiseaseDetectionApp\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },

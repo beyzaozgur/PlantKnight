@@ -282,3 +282,7 @@ C:\Users\w\source\repos\PlantDiseaseDetectionApp\PlantDiseaseDetectionApp\obj\De
 C:\Users\w\source\repos\PlantDiseaseDetectionApp\PlantDiseaseDetectionApp\obj\Debug\net6.0-maccatalyst\maccatalyst-x64\PlantDiseaseDetectionApp.pdb
 C:\Users\w\source\repos\PlantDiseaseDetectionApp\PlantDiseaseDetectionApp\obj\Debug\net6.0-maccatalyst\maccatalyst-x64\PlantDiseaseDetectionApp.genruntimeconfig.cache
 C:\Users\w\source\repos\PlantDiseaseDetectionApp\PlantDiseaseDetectionApp\obj\Debug\net6.0-maccatalyst\maccatalyst-x64\ref\PlantDiseaseDetectionApp.dll
+C:\Users\w\source\repos\PlantDiseaseDetectionApp\PlantDiseaseDetectionApp\obj\Debug\net6.0-maccatalyst\maccatalyst-x64\scopedcss\Pages\About.razor.rz.scp.css
+C:\Users\w\source\repos\PlantDiseaseDetectionApp\PlantDiseaseDetectionApp\obj\Debug\net6.0-maccatalyst\maccatalyst-x64\scopedcss\Pages\Chatbot.razor.rz.scp.css
+C:\Users\w\source\repos\PlantDiseaseDetectionApp\PlantDiseaseDetectionApp\obj\Debug\net6.0-maccatalyst\maccatalyst-x64\scopedcss\Pages\Contact.razor.rz.scp.css
+C:\Users\w\source\repos\PlantDiseaseDetectionApp\PlantDiseaseDetectionApp\obj\Debug\net6.0-maccatalyst\maccatalyst-x64\scopedcss\Pages\Index.razor.rz.scp.css

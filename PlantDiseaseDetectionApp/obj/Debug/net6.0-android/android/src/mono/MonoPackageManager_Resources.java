@@ -20,6 +20,7 @@ public class MonoPackageManager_Resources {
 		"Microsoft.AspNetCore.Metadata.dll",
 		"Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.dll",
 		"Microsoft.Azure.CognitiveServices.Vision.CustomVision.Training.dll",
+		"Microsoft.Bot.Connector.DirectLine.dll",
 		"Microsoft.Extensions.Configuration.dll",
 		"Microsoft.Extensions.Configuration.Abstractions.dll",
 		"Microsoft.Extensions.Configuration.Binder.dll",
