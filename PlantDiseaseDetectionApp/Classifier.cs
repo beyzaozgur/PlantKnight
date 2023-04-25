@@ -5,6 +5,21 @@ using Microsoft.Azure.CognitiveServices.Vision.CustomVision.Training.Models;
 namespace PlantDiseaseDetectionApp;
 public static class Classifier
 {
+    private static List<string> trainingEndpoints;
+    private static List<string> trainingKeys;
+    // You can obtain these values from the Keys and Endpoint page for your Custom Vision Prediction resource in the Azure Portal.
+    private static List<string> predictionEndpoints;
+    private static List<string> predictionKeys;
+
+    private static List<string> publishedModelNames;
+    private static List<CustomVisionPredictionClient> predictionApis;
+    private static List<CustomVisionTrainingClient> trainingApis;
+    private static List<Guid> projectGuids;
+    private static List<Project> projects;
+
+
+
+
     // You can obtain these values from the Keys and Endpoint page for your Custom Vision resource in the Azure Portal.
     private static string trainingEndpoint = "https://imagine.cognitiveservices.azure.com/";
     private static string trainingKey = "c54246171444419eb743729cd84878e0";
