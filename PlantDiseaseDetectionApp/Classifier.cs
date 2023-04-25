@@ -52,6 +52,23 @@ public static class Classifier
         }
         return resultPerLabel;
     }
+
+    private static void getModelsFromCSV()
+    {
+        try
+        {
+            using (StreamReader sr = new StreamReader("c:/temp/ESMDLOG.csv"))
+            {
+                String line = sr.ReadToEnd();
+            }
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine("The File could not be read:");
+            Console.WriteLine(e.Message);
+        }
+    
+    }
     private static CustomVisionTrainingClient AuthenticateTraining(string endpoint, string trainingKey, string predictionKey)
     {
         // Create the Api, passing in the training key
