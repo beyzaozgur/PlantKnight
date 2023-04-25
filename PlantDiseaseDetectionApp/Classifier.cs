@@ -83,9 +83,20 @@ public static class Classifier
             Console.WriteLine("The File could not be read or file broken somehow");
             Console.WriteLine(e.Message);
         }
+        makeConnectionWithModels();
     }
 
+    private static void makeConnectionWithModels()
+    {
+        for(int i=0;i<trainingEndpoints.Count;i++)
+        {
 
+            trainingApis.Add(AuthenticateTraining(trainingEndpoints.ElementAt(i), trainingKeys.ElementAt(i), predictionKeys.ElementAt(i)));
+            predictionApis.Add(AuthenticatePrediction(predictionEndpoints.ElementAt(i), predictionKeys.ElementAt(i)));
+            projects.Add(trainingApis.ElementAt(i).GetProject(projectGuids.ElementAt(i)));
+        }
+
+    }
     private static CustomVisionTrainingClient AuthenticateTraining(string endpoint, string trainingKey, string predictionKey)
     {
         // Create the Api, passing in the training key
