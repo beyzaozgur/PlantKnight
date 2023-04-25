@@ -1,2 +1,2 @@
-trainingEndpoint,trainingKey,predictionEndpoint,predictionKey,publishedModelName
-https://imagine.cognitiveservices.azure.com/,c54246171444419eb743729cd84878e0,https://imagine-prediction.cognitiveservices.azure.com/,6879549f63e94dc8a0fb10aadea09866,Iteration1
+trainingEndpoint,trainingKey,predictionEndpoint,predictionKey,publishedModelName,projectGUID
+https://imagine.cognitiveservices.azure.com/,c54246171444419eb743729cd84878e0,https://imagine-prediction.cognitiveservices.azure.com/,6879549f63e94dc8a0fb10aadea09866,Iteration1,dc5d91bc-46aa-4b74-89dc-bf0721019415

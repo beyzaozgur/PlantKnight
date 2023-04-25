@@ -5,12 +5,34 @@
 }
 
 .button-container {
-    margin-top: 10%
+    margin-top: 8%;
+    margin-bottom: 10%;
+}
+
+.text {
+    text-align: center;
+    margin: auto;
+    margin-top: 5%;
+    padding: 10px;
+    color: #3c1642;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    font-style: italic;
 }
 
 button {
     margin-top: 5%;
     width: 35%;
+    background-color: #3c1642;
+    border-color: #3a5a40;
+    border-width: 2px;
+    color: #dad7cd;
+}
+
+button:hover {
+    background-color: #3a5a40;
+    border-color: #3c1642;
+    color: white;
 }
 
 img {

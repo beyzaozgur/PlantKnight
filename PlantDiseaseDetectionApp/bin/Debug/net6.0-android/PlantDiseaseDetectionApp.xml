@@ -9,14 +9,6 @@
             class with bot info
             </summary>
         </member>
-        <member name="M:PlantDiseaseDetectionApp.BotConnector.BotEndpoint.#ctor(System.String,System.String,System.String)">
-            <summary>
-            constructor
-            </summary>
-            <param name="botId">Bot Id GUID</param>
-            <param name="tenantId">Bot tenant GUID</param>
-            <param name="tokenEndPoint">REST API endpoint to retreive directline token</param>
-        </member>
         <member name="T:PlantDiseaseDetectionApp.BotConnector.BotService">
             <summary>
             Bot Service class to interact with bot

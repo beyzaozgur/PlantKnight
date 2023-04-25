@@ -757,6 +757,9 @@
     <AppxPackagedFile Include="C:\Users\emirc\.nuget\packages\microsoft.azure.cognitiveservices.vision.customvision.training\2.0.0\lib\netstandard2.0\Microsoft.Azure.CognitiveServices.Vision.CustomVision.Training.dll">
       <PackagePath>Microsoft.Azure.CognitiveServices.Vision.CustomVision.Training.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\emirc\.nuget\packages\microsoft.bot.connector.directline\3.0.2\lib\netstandard1.3\Microsoft.Bot.Connector.DirectLine.dll">
+      <PackagePath>Microsoft.Bot.Connector.DirectLine.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\emirc\.nuget\packages\microsoft.extensions.configuration\6.0.1\lib\netstandard2.0\Microsoft.Extensions.Configuration.dll">
       <PackagePath>Microsoft.Extensions.Configuration.dll</PackagePath>
     </AppxPackagedFile>
@@ -943,11 +946,32 @@
     <AppxPackagedFile Include="C:\Users\emirc\Desktop\imaginer\repo\PlantKnight\PlantDiseaseDetectionApp\wwwroot\favicon.ico">
       <PackagePath>wwwroot\favicon.ico</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\emirc\Desktop\imaginer\repo\PlantKnight\PlantDiseaseDetectionApp\wwwroot\Images\MicrosoftLogo.png">
+      <PackagePath>wwwroot\Images\MicrosoftLogo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\emirc\Desktop\imaginer\repo\PlantKnight\PlantDiseaseDetectionApp\wwwroot\Images\OurTeam\Beyza.png">
+      <PackagePath>wwwroot\Images\OurTeam\Beyza.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\emirc\Desktop\imaginer\repo\PlantKnight\PlantDiseaseDetectionApp\wwwroot\Images\OurTeam\Efe.jpg">
+      <PackagePath>wwwroot\Images\OurTeam\Efe.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\emirc\Desktop\imaginer\repo\PlantKnight\PlantDiseaseDetectionApp\wwwroot\Images\OurTeam\Emircan.jpg">
+      <PackagePath>wwwroot\Images\OurTeam\Emircan.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\emirc\Desktop\imaginer\repo\PlantKnight\PlantDiseaseDetectionApp\wwwroot\Images\OurTeam\Eren.jpg">
+      <PackagePath>wwwroot\Images\OurTeam\Eren.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\emirc\Desktop\imaginer\repo\PlantKnight\PlantDiseaseDetectionApp\wwwroot\Images\OurTeam\Nadirhan.jpg">
+      <PackagePath>wwwroot\Images\OurTeam\Nadirhan.jpg</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\emirc\Desktop\imaginer\repo\PlantKnight\PlantDiseaseDetectionApp\wwwroot\Images\plant-knight-logo.png">
       <PackagePath>wwwroot\Images\plant-knight-logo.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\emirc\Desktop\imaginer\repo\PlantKnight\PlantDiseaseDetectionApp\wwwroot\Images\plant-knight-logo-original.png">
       <PackagePath>wwwroot\Images\plant-knight-logo-original.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\emirc\Desktop\imaginer\repo\PlantKnight\PlantDiseaseDetectionApp\wwwroot\Images\test.jpg">
+      <PackagePath>wwwroot\Images\test.jpg</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\emirc\Desktop\imaginer\repo\PlantKnight\PlantDiseaseDetectionApp\wwwroot\index.html">
       <PackagePath>wwwroot\index.html</PackagePath>
@@ -1123,14 +1147,20 @@
     <AppxPackagedFile Include="C:\Users\emirc\Desktop\imaginer\repo\PlantKnight\PlantDiseaseDetectionApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\emirc\Desktop\imaginer\repo\PlantKnight\PlantDiseaseDetectionApp\Pages\Camera.razor.css">
-      <PackagePath>Pages\Camera.razor.css</PackagePath>
+    <AppxPackagedFile Include="C:\Users\emirc\Desktop\imaginer\repo\PlantKnight\PlantDiseaseDetectionApp\Pages\About.razor.css">
+      <PackagePath>Pages\About.razor.css</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\emirc\Desktop\imaginer\repo\PlantKnight\PlantDiseaseDetectionApp\Pages\Chatbot.razor.css">
       <PackagePath>Pages\Chatbot.razor.css</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\emirc\Desktop\imaginer\repo\PlantKnight\PlantDiseaseDetectionApp\Pages\Contact.razor.css">
+      <PackagePath>Pages\Contact.razor.css</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\emirc\Desktop\imaginer\repo\PlantKnight\PlantDiseaseDetectionApp\Pages\Index.razor.css">
       <PackagePath>Pages\Index.razor.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\emirc\Desktop\imaginer\repo\PlantKnight\PlantDiseaseDetectionApp\Pages\Result.razor.css">
+      <PackagePath>Pages\Result.razor.css</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\emirc\Desktop\imaginer\repo\PlantKnight\PlantDiseaseDetectionApp\Shared\MainLayout.razor.css">
       <PackagePath>Shared\MainLayout.razor.css</PackagePath>

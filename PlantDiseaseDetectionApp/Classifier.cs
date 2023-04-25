@@ -55,20 +55,37 @@ public static class Classifier
 
     private static void getModelsFromCSV()
     {
+        //Just to pass the first line
+        Boolean isFirstLine = true;
         try
         {
-            using (StreamReader sr = new StreamReader("c:/temp/ESMDLOG.csv"))
+            using (StreamReader sr = new StreamReader("model_keys.csv"))
             {
                 String line = sr.ReadToEnd();
+                if (isFirstLine) isFirstLine= false;
+                else
+                {
+                    //split the line
+                    String[] informations=line.Split(","); 
+                    
+                    //just add this model's information to our list
+                    trainingEndpoints.Add(informations[0]);
+                    trainingKeys.Add(informations[1]);
+                    predictionEndpoints.Add(informations[2]);
+                    predictionKeys.Add(informations[3]);
+                    publishedModelNames.Add(informations[4]);
+                    projectGuids.Add(new Guid(informations[5]));
+                }
             }
         }
         catch (Exception e)
         {
-            Console.WriteLine("The File could not be read:");
+            Console.WriteLine("The File could not be read or file broken somehow");
             Console.WriteLine(e.Message);
         }
-    
     }
+
+
     private static CustomVisionTrainingClient AuthenticateTraining(string endpoint, string trainingKey, string predictionKey)
     {
         // Create the Api, passing in the training key

@@ -57,9 +57,11 @@ splashSplashScreen.scale-200.png
 splashSplashScreen.scale-400.png
 wwwroot\PlantDiseaseDetectionApp.styles.css
 wwwroot\PlantDiseaseDetectionApp.bundle.scp.css
-Pages\Camera.razor.css
+Pages\About.razor.css
 Pages\Chatbot.razor.css
+Pages\Contact.razor.css
 Pages\Index.razor.css
+Pages\Result.razor.css
 AboutAssets.txt
 Shared\MainLayout.razor.css
 Shared\NavMenu.razor.css
@@ -76,6 +78,13 @@ wwwroot\css\open-iconic\FONT-LICENSE
 wwwroot\css\open-iconic\ICON-LICENSE
 wwwroot\css\open-iconic\README.md
 wwwroot\favicon.ico
+wwwroot\Images\MicrosoftLogo.png
+wwwroot\Images\OurTeam\Beyza.png
+wwwroot\Images\OurTeam\Efe.jpg
+wwwroot\Images\OurTeam\Emircan.jpg
+wwwroot\Images\OurTeam\Eren.jpg
+wwwroot\Images\OurTeam\Nadirhan.jpg
 wwwroot\Images\plant-knight-logo.png
 wwwroot\Images\plant-knight-logo-original.png
+wwwroot\Images\test.jpg
 wwwroot\index.html
