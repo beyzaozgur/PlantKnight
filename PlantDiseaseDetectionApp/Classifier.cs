@@ -37,18 +37,22 @@ public static class Classifier
         trainingApi = AuthenticateTraining(trainingEndpoint, trainingKey, predictionKey);
         predictionApi = AuthenticatePrediction(predictionEndpoint, predictionKey);
 
-        projectGuid = new Guid("dc5d91bc-46aa-4b74-89dc-bf0721019415");
+        projectGuid = new Guid("6efb14d4-9aa7-41de-b708-4fb6b972bdcd");
         project = trainingApi.GetProject(projectGuid);
+        var result=2;
     }
     public static IDictionary<double,String> getPrediction(String imageFilePath)
     {
         FileStream fileStream = new FileStream(imageFilePath, FileMode.Open, FileAccess.Read);
 
-        var result = predictionApi.ClassifyImageAsync(project.Id, publishedModelName, fileStream);
         IDictionary<double,String> resultPerLabel= new Dictionary<double, String>();
-        foreach (var c in result.Result.Predictions)
+        for (int i = 0; i < predictionApis.Count; i++)
         {
-            resultPerLabel[c.Probability] = c.TagName;
+            var result = predictionApis[i].ClassifyImageAsync(projects[i].Id, publishedModelNames[i], fileStream);
+            foreach (var c in result.Result.Predictions)
+            {
+                resultPerLabel[c.Probability] = c.TagName;
+            }
         }
         return resultPerLabel;
     }

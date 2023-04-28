@@ -6,7 +6,7 @@ public static class MauiProgram
 {
 	public static MauiApp CreateMauiApp()
 	{
-		//Classifier.RunClassifier();
+		Classifier.RunClassifier();
 		//IDictionary<double,String> predRes=Classifier.getPrediction(@"C:\Users\w\source\repos\PlantDiseaseDetectionApp\PlantDiseaseDetectionApp\test.jpg");
 		var builder = MauiApp.CreateBuilder();
 		builder
