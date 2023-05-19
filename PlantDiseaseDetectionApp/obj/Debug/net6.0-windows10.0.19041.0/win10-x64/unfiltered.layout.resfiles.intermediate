@@ -62,6 +62,8 @@ Pages\Chatbot.razor.css
 Pages\Contact.razor.css
 Pages\Index.razor.css
 Pages\Result.razor.css
+python_script\local\myfunc\host.json
+python_script\local\myfunc\local.settings.json
 AboutAssets.txt
 Shared\MainLayout.razor.css
 Shared\NavMenu.razor.css

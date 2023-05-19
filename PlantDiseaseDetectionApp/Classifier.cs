@@ -2,121 +2,153 @@
 using Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction;
 using Microsoft.Azure.CognitiveServices.Vision.CustomVision.Training;
 using Microsoft.Azure.CognitiveServices.Vision.CustomVision.Training.Models;
+using Newtonsoft.Json;
+using System.Net;
+using System.Text.Json;
+
+using Tensorflow.Contexts;
+using System.Collections.Generic;
+using System.IO;
+using System.Net.Http;
+
+using Microsoft.Extensions.Logging;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using System.Text.Json.Nodes;
+
+
+
 namespace PlantDiseaseDetectionApp;
+public class ImageInfo
+{
+    public string id { get; set; }
+    // Add other properties if needed
+}
 public static class Classifier
 {
-    private static List<string> trainingEndpoints;
-    private static List<string> trainingKeys;
-    // You can obtain these values from the Keys and Endpoint page for your Custom Vision Prediction resource in the Azure Portal.
-    private static List<string> predictionEndpoints;
-    private static List<string> predictionKeys;
-
-    private static List<string> publishedModelNames;
-    private static List<CustomVisionPredictionClient> predictionApis;
-    private static List<CustomVisionTrainingClient> trainingApis;
-    private static List<Guid> projectGuids;
-    private static List<Project> projects;
-
-
-
-
-    // You can obtain these values from the Keys and Endpoint page for your Custom Vision resource in the Azure Portal.
-    private static string trainingEndpoint = "https://imagine.cognitiveservices.azure.com/";
-    private static string trainingKey = "c54246171444419eb743729cd84878e0";
-    // You can obtain these values from the Keys and Endpoint page for your Custom Vision Prediction resource in the Azure Portal.
-    private static string predictionEndpoint = "https://imagine-prediction.cognitiveservices.azure.com/";
-    private static string predictionKey = "6879549f63e94dc8a0fb10aadea09866";
-
-    private static string publishedModelName = "Iteration1";
-    private static CustomVisionPredictionClient predictionApi;
-    private static CustomVisionTrainingClient trainingApi;
-    private static Guid projectGuid;
-    private static Project project;
+    private static readonly string endpoint = "https://westeurope.api.cognitive.microsoft.com/";
+    private static readonly string predictionKey = "7818826752214848ab6be087cb9d17aa";
+    private static readonly string trainingKey = "cf5b66245476417180cfe7052794c0c4";
+    private static List<string> projectIds=new List<string>();
     public static void RunClassifier()
     {
-        trainingApi = AuthenticateTraining(trainingEndpoint, trainingKey, predictionKey);
-        predictionApi = AuthenticatePrediction(predictionEndpoint, predictionKey);
-
-        projectGuid = new Guid("6efb14d4-9aa7-41de-b708-4fb6b972bdcd");
-        project = trainingApi.GetProject(projectGuid);
-        var result=2;
+        projectIds=GetProjectIds();
     }
-    public static IDictionary<double,String> getPrediction(String imageFilePath)
-    {
-        FileStream fileStream = new FileStream(imageFilePath, FileMode.Open, FileAccess.Read);
 
-        IDictionary<double,String> resultPerLabel= new Dictionary<double, String>();
-        for (int i = 0; i < predictionApis.Count; i++)
+    private static List<string> GetProjectIds()
+    {
+        var url = $"{endpoint}/customvision/v3.3/training/projects";
+        var request = (HttpWebRequest)WebRequest.Create(url);
+        request.Headers.Add("Training-Key", trainingKey);
+
+        using (var response = (HttpWebResponse)request.GetResponse())
+        using (var streamReader = new StreamReader(response.GetResponseStream()))
         {
-            var result = predictionApis[i].ClassifyImageAsync(projects[i].Id, publishedModelNames[i], fileStream);
-            foreach (var c in result.Result.Predictions)
+            var responseJson = streamReader.ReadToEnd();
+            List<ImageInfo> projestValues = JsonConvert.DeserializeObject<List<ImageInfo>>(responseJson);
+
+            if (response.StatusCode == HttpStatusCode.OK)
             {
-                resultPerLabel[c.Probability] = c.TagName;
+                List<string> ids = projestValues.ConvertAll(image => image.id);
+
+
+                return ids;
+            }
+            else
+            {
+                var errorMessage = $"Failed to retrieve projects. Error: {responseJson}";
+                throw new Exception(errorMessage);
             }
         }
-        return resultPerLabel;
     }
 
-    private static void getModelsFromCSV()
+    public static IDictionary<float, String> getPrediction(byte[] image)
     {
-        //Just to pass the first line
-        Boolean isFirstLine = true;
-        try
+        IDictionary<float, String> predictions_overall=new Dictionary<float, String>();
+        // Perform prediction
+        var predictions = new List<string>();
+
+        foreach (var projectId in projectIds)
         {
-            using (StreamReader sr = new StreamReader("model_keys.csv"))
+            // Create the prediction URL
+            var predictionUrl = $"{endpoint}/customvision/v3.0/Prediction/{projectId}/classify/iterations/Iteration1/image";
+
+            // Set the headers with the prediction key
+            var headers = new Dictionary<string, string>
+                {
+                    { "Prediction-Key", predictionKey }
+                };
+
+            // Perform the prediction using the image data
+            var httpClient = new HttpClient();
+            using (var content = new ByteArrayContent(image))
             {
-                String line = sr.ReadToEnd();
-                if (isFirstLine) isFirstLine= false;
+                foreach (var header in headers)
+                {
+                    content.Headers.Add(header.Key, header.Value);
+                }
+
+                var response = httpClient.PostAsync(predictionUrl, content).Result;
+
+                if (response.StatusCode == System.Net.HttpStatusCode.OK)
+                {
+                    var prediction = response.Content.ReadAsStringAsync().Result;
+
+                    // Add the prediction to the list of predictions
+                    predictions.Add(prediction);
+
+                }
                 else
                 {
-                    //split the line
-                    String[] informations=line.Split(","); 
-                    
-                    //just add this model's information to our list
-                    trainingEndpoints.Add(informations[0]);
-                    trainingKeys.Add(informations[1]);
-                    predictionEndpoints.Add(informations[2]);
-                    predictionKeys.Add(informations[3]);
-                    publishedModelNames.Add(informations[4]);
-                    projectGuids.Add(new Guid(informations[5]));
+                    var errorMessage = $"Failed to perform prediction for project ID: {projectId}. Error: {response.Content.ReadAsStringAsync().Result}";
+                    predictions.Add(errorMessage);
                 }
             }
         }
-        catch (Exception e)
+        foreach(var prediction_one_model in predictions)
         {
-            Console.WriteLine("The File could not be read or file broken somehow");
-            Console.WriteLine(e.Message);
+            JsonDocument jsonDoc = JsonDocument.Parse(prediction_one_model);
+
+            // Get the root element of the JSON document
+            JsonElement root = jsonDoc.RootElement;
+
+            // Access the "predictions" array
+            JsonElement predictionsArray = root.GetProperty("predictions");
+            bool isFirst = true;
+            // Iterate through each prediction in the array
+            foreach (JsonElement prediction in predictionsArray.EnumerateArray())
+            {
+
+                // Extract the probability and tag name dynamically
+                float probability = prediction.GetProperty("probability").GetSingle();
+                string tagName = prediction.GetProperty("tagName").GetString();
+
+                // Use the extracted values as needed
+                if (isFirst)
+                {
+                    isFirst = false;
+                    continue;
+                }
+                else
+                {
+                    predictions_overall.Add(probability, tagName);
+                }
+                Console.WriteLine($"Probability: {probability}, Tag Name: {tagName}");
+            }
+
         }
-        makeConnectionWithModels();
-    }
 
-    private static void makeConnectionWithModels()
-    {
-        for(int i=0;i<trainingEndpoints.Count;i++)
-        {
-
-            trainingApis.Add(AuthenticateTraining(trainingEndpoints.ElementAt(i), trainingKeys.ElementAt(i), predictionKeys.ElementAt(i)));
-            predictionApis.Add(AuthenticatePrediction(predictionEndpoints.ElementAt(i), predictionKeys.ElementAt(i)));
-            projects.Add(trainingApis.ElementAt(i).GetProject(projectGuids.ElementAt(i)));
-        }
+        return predictions_overall;
 
     }
-    private static CustomVisionTrainingClient AuthenticateTraining(string endpoint, string trainingKey, string predictionKey)
+    public static byte[] GetImageAsByteArray(string imageFilePath)
     {
-        // Create the Api, passing in the training key
-        CustomVisionTrainingClient trainingApi = new CustomVisionTrainingClient(new Microsoft.Azure.CognitiveServices.Vision.CustomVision.Training.ApiKeyServiceClientCredentials(trainingKey))
-        {
-            Endpoint = endpoint
-        };
-        return trainingApi;
+        FileStream fileStream = new FileStream(imageFilePath, FileMode.Open, FileAccess.Read);
+        BinaryReader binaryReader = new BinaryReader(fileStream);
+        return binaryReader.ReadBytes((int)fileStream.Length);
     }
-    private static CustomVisionPredictionClient AuthenticatePrediction(string endpoint, string predictionKey)
-    {
-        // Create a prediction endpoint, passing in the obtained prediction key
-        CustomVisionPredictionClient predictionApi = new CustomVisionPredictionClient(new Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.ApiKeyServiceClientCredentials(predictionKey))
-        {
-            Endpoint = endpoint
-        };
-        return predictionApi;
-    }
+
+
+
+
 }

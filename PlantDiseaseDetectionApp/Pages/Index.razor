@@ -71,15 +71,11 @@
 				// ML operations & return data
 
 				Classifier.RunClassifier();
-				IDictionary<double, String> predRes = Classifier.getPrediction(localFilePath);
-				Console.WriteLine("PREDICTION COUNT: " + predRes.Count);
+				//IDictionary<double, String> predRes = Classifier.getPrediction(localFilePath);
+				//Console.WriteLine("PREDICTION COUNT: " + predRes.Count);
 
-				var list = predRes.ToList();
+				//var list = predRes.ToList();
 
-				foreach (var item in list)
-				{
-					Console.WriteLine("PREDICTION VALUES: " + item);
-				}
 
 				RunAndNavigate("Which medicine to Potato Late blight");
 
