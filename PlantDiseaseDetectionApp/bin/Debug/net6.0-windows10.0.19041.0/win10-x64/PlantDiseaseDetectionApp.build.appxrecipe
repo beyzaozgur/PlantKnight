@@ -37,12 +37,6 @@
     <AppxPackagedFile Include="C:\Users\emirc\Desktop\imaginer\repo\PlantKnight\PlantDiseaseDetectionApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>PlantDiseaseDetectionApp.exe</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\emirc\Desktop\imaginer\repo\PlantKnight\PlantDiseaseDetectionApp\python_script\local\myfunc\host.json">
-      <PackagePath>python_script\local\myfunc\host.json</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\emirc\Desktop\imaginer\repo\PlantKnight\PlantDiseaseDetectionApp\python_script\local\myfunc\local.settings.json">
-      <PackagePath>python_script\local\myfunc\local.settings.json</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\emirc\.nuget\packages\microsoft.netcore.app.runtime.win-x64\6.0.15\runtimes\win-x64\lib\net6.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
     </AppxPackagedFile>

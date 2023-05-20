@@ -105,7 +105,8 @@ public static class Classifier
                 }
             }
         }
-        foreach(var prediction_one_model in predictions)
+        predictions.Remove(predictions.ElementAt(26));
+        foreach (var prediction_one_model in predictions)
         {
             JsonDocument jsonDoc = JsonDocument.Parse(prediction_one_model);
 
@@ -114,25 +115,16 @@ public static class Classifier
 
             // Access the "predictions" array
             JsonElement predictionsArray = root.GetProperty("predictions");
-            bool isFirst = true;
             // Iterate through each prediction in the array
             foreach (JsonElement prediction in predictionsArray.EnumerateArray())
             {
-
                 // Extract the probability and tag name dynamically
                 float probability = prediction.GetProperty("probability").GetSingle();
                 string tagName = prediction.GetProperty("tagName").GetString();
 
                 // Use the extracted values as needed
-                if (isFirst)
-                {
-                    isFirst = false;
-                    continue;
-                }
-                else
-                {
-                    predictions_overall.Add(probability, tagName);
-                }
+                if (tagName.Equals("other")) continue;
+                predictions_overall.Add(probability, tagName);
                 Console.WriteLine($"Probability: {probability}, Tag Name: {tagName}");
             }
 
