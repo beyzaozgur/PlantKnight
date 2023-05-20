@@ -12,7 +12,6 @@ using System.IO;
 using System.Net.Http;
 
 using Microsoft.Extensions.Logging;
-using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.Text.Json.Nodes;
 
@@ -62,9 +61,9 @@ public static class Classifier
         }
     }
 
-    public static IDictionary<float, String> getPrediction(byte[] image)
+    public static string getPrediction(byte[] image)
     {
-        IDictionary<float, String> predictions_overall=new Dictionary<float, String>();
+        IDictionary<float, String> predictions_overall = new Dictionary<float, String>();
         // Perform prediction
         var predictions = new List<string>();
 
@@ -125,12 +124,26 @@ public static class Classifier
                 // Use the extracted values as needed
                 if (tagName.Equals("other")) continue;
                 predictions_overall.Add(probability, tagName);
-                Console.WriteLine($"Probability: {probability}, Tag Name: {tagName}");
+                //Console.WriteLine($"Probability: {probability}, Tag Name: {tagName}");
             }
 
         }
 
-        return predictions_overall;
+		var sorted_prediction_list = from entry in predictions_overall orderby entry.Key descending select entry;
+		Console.WriteLine("SORTED DICTIONARY");
+
+		foreach (var row in sorted_prediction_list)
+		{
+			Console.WriteLine(row.Key + " - " + row.Value);
+		}
+
+		var firstRow = sorted_prediction_list.First();
+		var key = firstRow.Key;
+		var prediction_result_label = firstRow.Value;
+
+		Console.WriteLine("PREDICTION RESULT : " + key + " - " + prediction_result_label);
+
+		return prediction_result_label;
 
     }
     public static byte[] GetImageAsByteArray(string imageFilePath)

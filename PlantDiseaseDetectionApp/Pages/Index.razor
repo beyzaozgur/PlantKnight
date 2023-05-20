@@ -69,15 +69,11 @@
 				StateHasChanged();
 
 				// ML operations & return data
-
 				Classifier.RunClassifier();
-				//IDictionary<double, String> predRes = Classifier.getPrediction(localFilePath);
-				//Console.WriteLine("PREDICTION COUNT: " + predRes.Count);
+				var prediction_result = Classifier.getPrediction(Classifier.GetImageAsByteArray(localFilePath));
 
-				//var list = predRes.ToList();
-
-
-				RunAndNavigate("Which medicine to Potato Late blight");
+				// send prediction result label to chatbot
+				RunAndNavigate(prediction_result);
 
 			}
 

@@ -1999,14 +1999,6 @@ C:\Users\w\source\repos\PlantDiseaseDetectionApp\PlantDiseaseDetectionApp\obj\De
 C:\Users\w\source\repos\PlantDiseaseDetectionApp\PlantDiseaseDetectionApp\obj\Debug\net6.0-android\scopedcss\Pages\About.razor.rz.scp.css
 C:\Users\w\source\repos\PlantDiseaseDetectionApp\PlantDiseaseDetectionApp\obj\Debug\net6.0-android\android\assets\Microsoft.Bot.Connector.DirectLine.dll
 C:\Users\w\source\repos\PlantDiseaseDetectionApp\PlantDiseaseDetectionApp\obj\Debug\net6.0-android\scopedcss\Pages\Result.razor.rz.scp.css
-C:\Users\w\source\repos\PlantDiseaseDetectionApp\PlantDiseaseDetectionApp\obj\Debug\net6.0-android\android\assets\mscorlib.dll
-C:\Users\w\source\repos\PlantDiseaseDetectionApp\PlantDiseaseDetectionApp\obj\Debug\net6.0-android\android\assets\System.Collections.Concurrent.dll
-C:\Users\w\source\repos\PlantDiseaseDetectionApp\PlantDiseaseDetectionApp\obj\Debug\net6.0-android\android\assets\System.Data.dll
-C:\Users\w\source\repos\PlantDiseaseDetectionApp\PlantDiseaseDetectionApp\obj\Debug\net6.0-android\android\assets\System.dll
-C:\Users\w\source\repos\PlantDiseaseDetectionApp\PlantDiseaseDetectionApp\obj\Debug\net6.0-android\android\assets\System.Net.NetworkInformation.dll
-C:\Users\w\source\repos\PlantDiseaseDetectionApp\PlantDiseaseDetectionApp\obj\Debug\net6.0-android\android\assets\System.Private.CoreLib.dll
-C:\Users\w\source\repos\PlantDiseaseDetectionApp\PlantDiseaseDetectionApp\obj\Debug\net6.0-android\android\assets\System.Private.Uri.dll
-C:\Users\w\source\repos\PlantDiseaseDetectionApp\PlantDiseaseDetectionApp\obj\Debug\net6.0-android\android\assets\System.Xml.dll
 C:\Users\emirc\Desktop\imaginer\repo\PlantKnight\PlantDiseaseDetectionApp\obj\Debug\net6.0-android\scopedcss\Pages\About.razor.rz.scp.css
 C:\Users\emirc\Desktop\imaginer\repo\PlantKnight\PlantDiseaseDetectionApp\obj\Debug\net6.0-android\scopedcss\Pages\Contact.razor.rz.scp.css
 C:\Users\emirc\Desktop\imaginer\repo\PlantKnight\PlantDiseaseDetectionApp\obj\Debug\net6.0-android\scopedcss\Pages\Result.razor.rz.scp.css
@@ -2018,3 +2010,11 @@ C:\Users\emirc\Desktop\imaginer\repo\PlantKnight\PlantDiseaseDetectionApp\obj\De
 C:\Users\emirc\Desktop\imaginer\repo\PlantKnight\PlantDiseaseDetectionApp\obj\Debug\net6.0-android\android\assets\System.Private.CoreLib.dll
 C:\Users\emirc\Desktop\imaginer\repo\PlantKnight\PlantDiseaseDetectionApp\obj\Debug\net6.0-android\android\assets\System.Private.Uri.dll
 C:\Users\emirc\Desktop\imaginer\repo\PlantKnight\PlantDiseaseDetectionApp\obj\Debug\net6.0-android\android\assets\System.Xml.dll
+C:\Users\w\source\repos\PlantDiseaseDetectionApp\PlantDiseaseDetectionApp\obj\Debug\net6.0-android\android\assets\mscorlib.dll
+C:\Users\w\source\repos\PlantDiseaseDetectionApp\PlantDiseaseDetectionApp\obj\Debug\net6.0-android\android\assets\System.Collections.Concurrent.dll
+C:\Users\w\source\repos\PlantDiseaseDetectionApp\PlantDiseaseDetectionApp\obj\Debug\net6.0-android\android\assets\System.Data.dll
+C:\Users\w\source\repos\PlantDiseaseDetectionApp\PlantDiseaseDetectionApp\obj\Debug\net6.0-android\android\assets\System.dll
+C:\Users\w\source\repos\PlantDiseaseDetectionApp\PlantDiseaseDetectionApp\obj\Debug\net6.0-android\android\assets\System.Net.NetworkInformation.dll
+C:\Users\w\source\repos\PlantDiseaseDetectionApp\PlantDiseaseDetectionApp\obj\Debug\net6.0-android\android\assets\System.Private.CoreLib.dll
+C:\Users\w\source\repos\PlantDiseaseDetectionApp\PlantDiseaseDetectionApp\obj\Debug\net6.0-android\android\assets\System.Private.Uri.dll
+C:\Users\w\source\repos\PlantDiseaseDetectionApp\PlantDiseaseDetectionApp\obj\Debug\net6.0-android\android\assets\System.Xml.dll
