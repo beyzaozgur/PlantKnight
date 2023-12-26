@@ -1,1 +1,1 @@
-C:\Users\emirc\Desktop\imaginer\repo\PlantKnight\PlantDiseaseDetectionApp\PlantDiseaseDetectionApp.csproj;x64
+C:\Users\w\source\repos\PlantDiseaseDetectionApp\PlantDiseaseDetectionApp\PlantDiseaseDetectionApp.csproj;x64

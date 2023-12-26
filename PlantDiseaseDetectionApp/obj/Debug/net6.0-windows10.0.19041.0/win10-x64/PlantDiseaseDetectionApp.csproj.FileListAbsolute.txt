@@ -386,7 +386,6 @@ C:\Users\w\source\repos\PlantDiseaseDetectionApp\PlantDiseaseDetectionApp\obj\De
 C:\Users\w\source\repos\PlantDiseaseDetectionApp\PlantDiseaseDetectionApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 C:\Users\w\source\repos\PlantDiseaseDetectionApp\PlantDiseaseDetectionApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 C:\Users\w\source\repos\PlantDiseaseDetectionApp\PlantDiseaseDetectionApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
-C:\Users\w\source\repos\PlantDiseaseDetectionApp\PlantDiseaseDetectionApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\scopedcss\Pages\Camera.razor.rz.scp.css
 C:\Users\w\source\repos\PlantDiseaseDetectionApp\PlantDiseaseDetectionApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\scopedcss\Pages\Index.razor.rz.scp.css
 C:\Users\emirc\Desktop\imaginer\repo\PlantKnight\PlantDiseaseDetectionApp\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\PlantDiseaseDetectionApp.exe
 C:\Users\emirc\Desktop\imaginer\repo\PlantKnight\PlantDiseaseDetectionApp\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.xbf
@@ -797,3 +796,17 @@ C:\Users\emirc\Desktop\imaginer\repo\PlantKnight\PlantDiseaseDetectionApp\bin\De
 C:\Users\emirc\Desktop\imaginer\repo\PlantKnight\PlantDiseaseDetectionApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\scopedcss\Pages\About.razor.rz.scp.css
 C:\Users\emirc\Desktop\imaginer\repo\PlantKnight\PlantDiseaseDetectionApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\scopedcss\Pages\Contact.razor.rz.scp.css
 C:\Users\emirc\Desktop\imaginer\repo\PlantKnight\PlantDiseaseDetectionApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\scopedcss\Pages\Result.razor.rz.scp.css
+C:\Users\w\source\repos\PlantDiseaseDetectionApp\PlantDiseaseDetectionApp\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\Google.Protobuf.dll
+C:\Users\w\source\repos\PlantDiseaseDetectionApp\PlantDiseaseDetectionApp\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\MethodBoundaryAspect.dll
+C:\Users\w\source\repos\PlantDiseaseDetectionApp\PlantDiseaseDetectionApp\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.dll
+C:\Users\w\source\repos\PlantDiseaseDetectionApp\PlantDiseaseDetectionApp\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\Microsoft.Azure.CognitiveServices.Vision.CustomVision.Training.dll
+C:\Users\w\source\repos\PlantDiseaseDetectionApp\PlantDiseaseDetectionApp\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\Microsoft.Bot.Connector.DirectLine.dll
+C:\Users\w\source\repos\PlantDiseaseDetectionApp\PlantDiseaseDetectionApp\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\Microsoft.Rest.ClientRuntime.dll
+C:\Users\w\source\repos\PlantDiseaseDetectionApp\PlantDiseaseDetectionApp\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\Microsoft.Rest.ClientRuntime.Azure.dll
+C:\Users\w\source\repos\PlantDiseaseDetectionApp\PlantDiseaseDetectionApp\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\Newtonsoft.Json.dll
+C:\Users\w\source\repos\PlantDiseaseDetectionApp\PlantDiseaseDetectionApp\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\Protobuf.Text.dll
+C:\Users\w\source\repos\PlantDiseaseDetectionApp\PlantDiseaseDetectionApp\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\Serilog.dll
+C:\Users\w\source\repos\PlantDiseaseDetectionApp\PlantDiseaseDetectionApp\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\Serilog.Sinks.Console.dll
+C:\Users\w\source\repos\PlantDiseaseDetectionApp\PlantDiseaseDetectionApp\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\Tensorflow.Binding.dll
+C:\Users\w\source\repos\PlantDiseaseDetectionApp\PlantDiseaseDetectionApp\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\clrcompression.dll
+C:\Users\w\source\repos\PlantDiseaseDetectionApp\PlantDiseaseDetectionApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\scopedcss\Pages\Result.razor.rz.scp.css

@@ -29,6 +29,14 @@
       "PackagePath": "staticwebassets\\Images\\OurTeam\\Nadirhan.jpg"
     },
     {
+      "Id": "C:\\Users\\w\\source\\repos\\PlantDiseaseDetectionApp\\PlantDiseaseDetectionApp\\wwwroot\\Images\\imagine.png",
+      "PackagePath": "staticwebassets\\Images\\imagine.png"
+    },
+    {
+      "Id": "C:\\Users\\w\\source\\repos\\PlantDiseaseDetectionApp\\PlantDiseaseDetectionApp\\wwwroot\\Images\\plant-knight-1.png",
+      "PackagePath": "staticwebassets\\Images\\plant-knight-1.png"
+    },
+    {
       "Id": "C:\\Users\\w\\source\\repos\\PlantDiseaseDetectionApp\\PlantDiseaseDetectionApp\\wwwroot\\Images\\plant-knight-logo-original.png",
       "PackagePath": "staticwebassets\\Images\\plant-knight-logo-original.png"
     },
@@ -37,8 +45,24 @@
       "PackagePath": "staticwebassets\\Images\\plant-knight-logo.png"
     },
     {
+      "Id": "C:\\Users\\w\\source\\repos\\PlantDiseaseDetectionApp\\PlantDiseaseDetectionApp\\wwwroot\\Images\\plant-knight-title-22.png",
+      "PackagePath": "staticwebassets\\Images\\plant-knight-title-22.png"
+    },
+    {
+      "Id": "C:\\Users\\w\\source\\repos\\PlantDiseaseDetectionApp\\PlantDiseaseDetectionApp\\wwwroot\\Images\\plant-knight-title.png",
+      "PackagePath": "staticwebassets\\Images\\plant-knight-title.png"
+    },
+    {
+      "Id": "C:\\Users\\w\\source\\repos\\PlantDiseaseDetectionApp\\PlantDiseaseDetectionApp\\wwwroot\\Images\\plant-knight.png",
+      "PackagePath": "staticwebassets\\Images\\plant-knight.png"
+    },
+    {
       "Id": "C:\\Users\\w\\source\\repos\\PlantDiseaseDetectionApp\\PlantDiseaseDetectionApp\\wwwroot\\Images\\test.jpg",
       "PackagePath": "staticwebassets\\Images\\test.jpg"
+    },
+    {
+      "Id": "C:\\Users\\w\\source\\repos\\PlantDiseaseDetectionApp\\PlantDiseaseDetectionApp\\wwwroot\\Images\\tomato_early_blight.jpg",
+      "PackagePath": "staticwebassets\\Images\\tomato_early_blight.jpg"
     },
     {
       "Id": "C:\\Users\\w\\source\\repos\\PlantDiseaseDetectionApp\\PlantDiseaseDetectionApp\\wwwroot\\css\\app.css",

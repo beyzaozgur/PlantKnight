@@ -3,7 +3,8 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<img class="center" width="270" height="270" src="Images/plant-knight-logo.png" />
+<img class="center" width="250" height="250" style="margin-top:20px;" src="Images/plant-knight.png" />
+<img class="center" height="30" src="Images/plant-knight-title.png" />
 
 <div class="text">
 	Take/Upload a photo of your plant, learn about its disease, and get treatment suggestions from the chatbot!
@@ -70,9 +71,14 @@
 
 				// ML operations & return data
 				Classifier.RunClassifier();
+
 				var prediction_result = Classifier.getPrediction(Classifier.GetImageAsByteArray(localFilePath));
 
-				// send prediction result label to chatbot
+				var prediction_result_formatted = FormatLabelString(prediction_result);
+
+				Console.WriteLine("PREDICTION RESULT FORMATTED : " + prediction_result_formatted);
+
+				//send prediction result label to chatbot
 				RunAndNavigate(prediction_result);
 
 			}
@@ -83,10 +89,42 @@
 
 	public void RunAndNavigate(string query)
 	{
-		string navText = BotConnectorApp.RunBot(query);
+		bool isHealthy = PlantIsHealthy(prediction_result_formatted);
+
+		string navText = "";
+
+		if(!isHealthy) {
+			navText = BotConnectorApp.RunBot(query);
+		}
+		else {
+			navText = "This plant is healthy!"
+		}
 
 		Console.WriteLine("NAVIGATION TEXT: " + navText);
 
-		NavigationManager.NavigateTo("/result/" + navText);
+		NavigationManager.NavigateTo("/result/" + navText + "/" + query);
+	}
+
+	public string FormatLabelString(string label)
+	{
+		string formattedString = label.Replace("___", " ").Replace("_", " ");
+		return formattedString;
+	}
+
+	public bool PlantIsHealthy(string label)
+	{
+		// Split the input string into words
+		string[] words = label.Split(' ');
+
+		// Check if any of the words match the target word
+		foreach (string w in words)
+		{
+			if (string.Equals(w, "healthy", StringComparison.OrdinalIgnoreCase))
+			{
+				return true;
+			}
+		}
+
+		return false;
 	}
 }

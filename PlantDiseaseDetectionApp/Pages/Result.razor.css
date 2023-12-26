@@ -54,3 +54,9 @@ figure {
     margin-left: auto;
     margin-right: auto;
 }
+
+.text {
+    text-align: justify;
+    text-justify: inter-word;
+    padding: 2px;
+}

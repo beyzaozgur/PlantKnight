@@ -5,7 +5,7 @@
 }
 
 .button-container {
-    margin-top: 8%;
+    margin-top: 4%;
     margin-bottom: 10%;
 }
 
@@ -29,11 +29,11 @@ button {
     color: #dad7cd;
 }
 
-button:hover {
-    background-color: #3a5a40;
-    border-color: #3c1642;
-    color: white;
-}
+    button:hover {
+        background-color: #6c757d;
+        border-color: #3c1642;
+        color: white;
+    }
 
 img {
     display: block;
